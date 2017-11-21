@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	    <meta charset="utf-8">
+	    <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster" rel="stylesheet">
+    </head>
+
+    <body id="bloc-conteneur">
+	    <header>
+            <img id="icone-vel" src="images/vel.png">
+		    <p id="slogan"> VeliCity </br> Votre Velib à portée de main </p>
+	    </header>
+
+	    <section id="conteneur">
+            <div id="mobile">
+                <h2>Velicity en 3 étapes</h2>
+                <p> Selectionnez la station de votre choix</p>
+                <p> Cliquez sur reservez </p>
+                <p> Signez dans le canvas afin de valider la réservation</p>
+            </div>
+            <div id="carrousel">
+                <div id="slide1" class="slide">
+                    <div class="visu">
+                        <img src="images/i1.bmp">
+                    </div>
+                </div>
+
+                <div id="slide2" class="slide">
+                    <div class="visu">
+                        <img src="images/i2.bmp">
+                    </div>
+                </div>
+            
+                <div id="slide3" class="slide">
+                    <div class="visu">
+                        <img src="images/i3.bmp">
+                    </div>
+                </div>
+
+                <div id="slide4" class="slide">
+                    <div class="visu">
+                        <img src="images/i4.bmp">
+                    </div>
+                </div>
+
+                <div id="inline">
+                    <button id="prev"> < </button>
+                    <button id="next"> > </button>
+                </div>
+
+            <!--
+            <div class="navigation">
+            <span id="prev"> < </span>
+            <span id="suiv"> > </span>
+            </div>
+            -->
+
+                </div>
+        </section>
+
+        <section id="titre">
+                <h2>Station velib de Paris</h2>
+        </section>
+        
+        <section id="station-velib">
+    	    <div id="station-google">
+            </div>
+            <div id="panneau">
+                <table id ="table-reservation" cellspacing="20">
+                    <thead>
+                        <tr>
+                            <th class="center"> Station séléctionée</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td>Nom de la station : <span id="station-name" class="info-station"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Statut : <span id="station-status" class="info-station"></span></td>
+                        </tr>
+                        <tr>    
+                            <td>Adresse : <span id="station-address" class="info-station"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Capacité : <span id="station-capacity" class="info-station"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Vélo(s) disponible(s) : <span id="station-available-bikes" class="info-station"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Emplacement(s) disponibles : <span id="station-available-bike-stands" class="info-station"></span></td>
+                        </tr>
+                        <tr>
+                            <td id ="reserver"><button id="button-reserver">Reservez</button></td>
+                        </tr>
+                    <tbody>
+                </table>
+            </div>
+            <div id="cadre-signature" class="modal">
+                <h2> Signature </h2>
+                <p> Veuillez signer afin de valider votre réservation</p>
+                <canvas id="canvasInAPerfectWorld" width="260" height="160">Votre nagivateur ne supoprte pas canvas.
+                 </canvas>
+                <button id="valider-reservation">Valider</button>
+                <button id="annuler-reservation">Annuler</button>
+            </div>
+        </section> 
+        <section id="reservation">
+                <h2> Etat de votre réservation </h2>
+                <p id="reservation-timer" >Une réservation est en cours à la station <span id="stationS"></span> </br>La réservation expirera dans <span id="minutes"> </span> minute(s) et <span id="secondes"></span> seconde(s)</p>
+                <p id="expiration"> Votre réservation à expirer ! </p>
+                <button id="button-annuler"> Annuler</button>
+        </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script
+  	src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal-signature.js"></script>
+    <script src="js/signature.js"></script>
+    <script src="js/reservation.js"></script>
+    <script src="js/carte-velib.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEEm3YzvwvhAKq46qn7-js517xawsp55c&callback=initMap"
+    ></script>
+	</body>
+</html>

@@ -1,0 +1,453 @@
+html body{
+	padding:0;
+	border:0;
+	font-size-color:white;
+}
+
+#bloc-conteneur{
+	width: 90%;
+	margin:auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	min-width: 300px;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome/fontawesome-webfont.eot?v=3.0.1');
+	src: url('fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+		 url('fonts/fontawesome/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+		 url('fonts/fontawesome/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+button{
+	display: block;
+	height: 50px;
+	width: 150px;
+	margin: 20px auto;
+	background: #DCDCDC;
+	border-radius: 5px;
+	font-family: 'Lobster', 'cursive';
+	font-size: 1.7em;
+	box-shadow: 1px 1px 3px #999;
+}
+
+button:focus{
+	outline:none;
+}
+
+/* Header */
+
+header{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	height:200px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	background-color:#DCDCDC;
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid;
+}
+
+#icone-vel{
+	height: 150px;
+	width: 300px;
+}
+
+#slogan{
+	font-family: 'Lobster' , cursive;
+	font-size: 3.5em;
+}
+
+/* Slider */
+
+#carrousel{
+	width: 100%;
+	height:700px;
+	position: relative;
+	margin-bottom: 1px;
+}
+
+.slide{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height:700px;
+	border-radius: 5px;
+}
+
+.slide img{
+	width: 100%;
+	height:700px;
+	border-radius: 5px;
+	border: 2px solid;
+}
+
+#inline{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#prev{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	margin: auto;
+	background: #DCDCDC;
+	border-radius: 5px;
+	font-size: 2em;
+	box-shadow: 1px 1px 3px #999;
+}
+
+#next{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	margin: auto;
+	background: #DCDCDC;
+	border-radius: 5px;
+	font-size: 2em;
+	box-shadow: 1px 1px 3px #999;
+}
+
+/* Titre station */
+
+#titre{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #DCDCDC;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+#titre h2{
+	font-family: 'Lobster', 'cursive';
+	font-size: 4em;
+	text-align: center;
+	margin:0;
+}
+
+/* Section Station */
+
+#station-velib{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 700px;
+	margin-bottom: 15px;
+}
+
+/* Carte google */
+
+#station-google{
+	height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    width: 170%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+/* Panneau */
+
+#panneau{
+    height: 100%;
+    width :100%;
+    min-height: 570px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    margin-left: 20px;
+    z-index:1;
+}
+
+table {
+    height: 100%;
+    width : 100%;
+    border: none;
+    margin-bottom: 20px;
+    
+}
+
+table:after{
+	width: 50%;
+}
+
+thead{
+    font-size:1.7em;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+td{
+	border-bottom: 1px solid black;
+	font-family: 'Lobster', 'curisve';
+	font-size: 1.3em;
+}
+
+td span{
+	font-family: 'arial';
+}
+
+th{
+	height: 50px;
+	font-family: 'Courgette', 'curisve';
+	font-size: 1.5em;
+	margin-left: 20px;
+}
+
+#reserver {
+	display: none;
+	border-bottom: none;
+}
+
+#button-reserver{
+	border: 1px solid;
+	font-size: 1.5em;
+	height: 60px;
+	width: 180px;
+}
+
+/* Signature */
+
+#cadre-signature{
+	height: 100%;
+	width: 100%;
+	min-height: 570px;
+	background-color: white;
+	display: none;
+	margin-left: 20px;
+	text-align: center;
+	border : 1px solid black;
+	border-radius: 5px;
+	font-size: 1.3em;
+	font-family: 'Lobster', 'cursive';
+	min-width: 270px;
+	z-index: 1;
+}
+
+#cadre-signature h2{
+	font-family: 'Courgette','cursive';
+	font-size:2.4em;
+	text-align: center;
+	display: block;
+}
+
+#cadre-signature p{
+	font-size: 1.3em;
+}
+
+#canvasInAPerfectWorld{
+	border: solid 1px #99999C;	
+	z-index: 2;
+	background-color: white;
+}
+
+#valider-reservation, #annuler-reservation{
+	border: 1px solid black;
+	height: 60px;
+	width: 180px;
+}
+
+/* Reservation */
+
+#reservation{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 250px;
+	width: 100%;
+	background-color: #DCDCDC;
+	border-radius: 5px;
+	font-family: 'Lobster','cursive';
+	text-align: center;
+	font-size: 1.3em;
+	display: none;
+	margin-top: 10px;
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+
+#reservation h2{
+	font-family: 'Lobster','cursive';
+	font-size:1.7em;
+	padding-top: 5px;
+}
+
+#reservation-timer{
+	display: block;
+	font-family : 'arial';
+}
+
+#expiration{
+	display:none;
+}
+
+#button-annuler{
+	border: 1px solid black;
+	height: 60px;
+	width: 180px;
+}
+
+/* Mobile */
+
+#mobile{
+	border: 1px solid black;
+	width: 100%;
+	height: 260px;
+	font-size: 1.4em;
+	display: none;
+	text-align: center;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	background-color : #DCDCDC;
+}
+
+#mobile h2{
+	font-size: 2em;
+	font-family: 'Lobster','cursive';
+}
+
+/* Responsive */
+
+@media screen and (max-width: 767px){
+	header{
+		border: 1px solid black;
+	}
+
+	header img{
+		display: none;
+	}
+
+	#carrousel{
+		display: none;
+	}
+
+	#slogan{
+	font-size: 2.8em;
+	}
+
+	#titre {
+		display: none;
+	}
+
+	#mobile{
+		display: block;
+	}
+
+	#mobile h2{
+		font-size: 1.5em;
+	}
+
+	#button-annuler #button-reserver #valider-reservation #annuler-reservation{
+		height: 50px;
+		width: 150px;
+		font-size: 1em;
+	}
+
+	td{
+		font-size:1.1em;
+	}
+
+	@media screen and (max-width: 991px){
+	#conteneur{
+		-webkit-order: 1;
+		    -ms-flex-order: 1;
+		        order: 1;
+	}
+
+	#cadre-signature{
+		background-color: #DCDCDC;
+	}
+
+	#panneau{
+		background-color: #DCDCDC;
+	}
+
+	#station-velib{
+		-webkit-order: 3;
+		    -ms-flex-order: 3;
+		        order: 3;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	#reservation{
+		-webkit-order: 4;
+		    -ms-flex-order: 4;
+		        order: 4;
+		margin-top: 290px;
+		height: 300px;
+	}
+
+	#station-google{
+		-webkit-order: 1;
+		    -ms-flex-order: 1;
+		        order: 1;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	#panneau{
+		-webkit-order: 2;
+		    -ms-flex-order: 2;
+		        order: 2;
+		width: 100%
+		max-height:1000px;
+		margin-bottom: 15px;
+		margin-left: 0;
+	}
+
+	#cadre-signature{
+		width: 100%;
+		-webkit-order: 3;
+		    -ms-flex-order: 3;
+		        order: 3;
+		margin-left: 0;
+		margin-bottom: 15px ;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#reservation{
+		font-size: 1.0em;
+	}
+
+	#mobile{
+		height: 320px;
+	}
+
+	#cadre-signature
+	{
+		font-size: 1.1em;
+	}
